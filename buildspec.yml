@@ -13,7 +13,7 @@ phases:
 
   post_build:
     commands:
-      - aws s3 sync build/ s3://YOUR-BUCKET-NAME --delete
+      - aws s3 sync build/ s3://react-pipeline-app-bucket --delete
 
 artifacts:
   files:
